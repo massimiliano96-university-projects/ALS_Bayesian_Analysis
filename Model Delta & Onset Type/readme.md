@@ -4,7 +4,7 @@ With this model we want to investigate the difference between the two different 
 In the medicine literature, we can see that the Bulbar type is more aggressive than the Limb one; we want to prove this.
 
 Here is a plot of 100 patient for both groups:
-![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/bulbar_vs_limb.pdf)
+![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/bulbar_vs_limb.png)
 
 We use a Mixed Effect Model, where the groups are made by each patient:
 
