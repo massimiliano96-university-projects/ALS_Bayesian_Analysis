@@ -44,4 +44,14 @@ The difference is more or less -0.01 * day in mean, that is -0.3 ALSFRS-R point/
 
 # Model comparison
 
+We can compare the three methods predicting ALSFRS on a test set of 100 patients. We compute the TOTAL MEAN SQUARE ERROR (TMSE) as:
+\[
+\sum_{i=1}^100 \sum_{j=1}^{n_i}  ( y_ij - fitted(y_ij))^2 + Var(fitted(y_iy) )
+\]
 
+These are the result:
+- model 1 : 146309.4 
+- model 2 : 148619.4 
+- model 3 : 149423.9
+
+The first model seems to be the best
