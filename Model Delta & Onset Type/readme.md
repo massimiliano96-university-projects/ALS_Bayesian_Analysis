@@ -3,6 +3,9 @@
 With this model we want to investigate the difference between the two different types of ALS onset location: Bulbar or Limb.
 In the medicine literature, we can see that the Bulbar type is more aggressive than the Limb one; we want to prove this.
 
+Here is a plot of 100 patient for both groups:
+![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/bulbar_vs_limb.pdf)
+
 We use a Mixed Effect Model, where the groups are made by each patient:
 
 We have introduced a dummy variable for Bulbar type: I_bulbar(patient_i) = 1 if patient_i has a Bulbar ALS, 0 otherwise
