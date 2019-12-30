@@ -135,8 +135,8 @@ fit1 <- brm(data = alsfrs_train,
               
               prior = c(prior(normal(0, 5), class = Intercept),
                         prior(normal(0, 1), class = b),
-                        prior(cauchy(0, 1), class = sd),
-                        prior(cauchy(0, 1), class = sigma),
+                        prior(cauchy(0, 1), class = sd),                ### cauchy prior
+                        prior(cauchy(0, 1), class = sigma),             ###
                         prior(lkj_corr_cholesky(1.5), class = cor)),    ### prior to the correlation
                                                                         ### (lkj)
               iter = 20000, warmup = 1000, chains = 1, cores = 4,
@@ -144,6 +144,40 @@ fit1 <- brm(data = alsfrs_train,
               seed = 190831)
 
 save(fit1, file = "brm_model_onset_type.Rdata")
+
+#fit2 <- brm(data = alsfrs_train,
+#              family = gaussian,
+#              ALSFRS_R_Total ~ 1 + Delta + dummy_bulbar + 
+#                Delta*dummy_bulbar + (1 + Delta | ID),
+#              
+#              prior = c(prior(normal(0, 5), class = Intercept),
+#                        prior(normal(0, 1), class = b),
+#                        prior(inv_gamma(2, 1), class = sd),             ### inv_gamma prior
+#                        prior(inv_gamma(2, 1), class = sigma),          ###
+#                        prior(lkj_corr_cholesky(1.5), class = cor)),    ### prior to the correlation
+#                                                                        ### (lkj)
+#              iter = 20000, warmup = 1000, chains = 1, cores = 4,
+#              control = list(adapt_delta = .975, max_treedepth = 20),
+#              seed = 190831)
+#
+#save(fit2, file = "brm_model_onset_type_inv_gamma.Rdata")
+
+
+#fit3 <- brm(data = alsfrs_train,
+#              family = gaussian,
+#              ALSFRS_R_Total ~ 1 + Delta + dummy_bulbar + 
+#                Delta*dummy_bulbar + (1 + Delta || ID),          ##### NO CORRELATION ####
+#              
+#              prior = c(prior(normal(0, 5), class = Intercept),
+#                        prior(normal(0, 1), class = b),
+#                        prior(inv_gamma(2, 1), class = sd),
+#                        prior(inv_gamma(2, 1), class = sigma),
+#                       
+#              iter = 20000, warmup = 1000, chains = 1, cores = 4,
+#              control = list(adapt_delta = .975, max_treedepth = 20),
+#              seed = 190831)
+#
+#save(fit3, file = "brm_model_onset_type_inv_gamma_no_corr.Rdata")
 
 
 load("brm_model_onset_type.Rdata")
