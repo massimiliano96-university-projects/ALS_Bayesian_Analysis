@@ -1,4 +1,4 @@
-#Model_Delta_Onset_Type
+# Model_Delta_Onset_Type
 
 With this model we want to investigate the difference between the two different types of ALS onset location: Bulbar or Limb.
 In the medicine literature, we can see that the Bulbar type is more aggressive than the Limb one; we want to prove this.
