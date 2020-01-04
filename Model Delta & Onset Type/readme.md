@@ -30,7 +30,9 @@ We've choose three different priors for parameter thetas in the model, obtaining
 2) Model with inv-gamma prior for thetas + LKJ correlation between thetas
 3) Model with inv-gamma prior for thetas and no correlation
 
-# Results
+# Results (Brm Model)
+
+Results (for BRM model, using BRMS Package) (in Stan Model we fit the model 3 directly with Stan)
 
 ![images traceplot](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/traceplot_betas.png)
 
