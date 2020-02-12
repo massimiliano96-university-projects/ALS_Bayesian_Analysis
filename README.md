@@ -55,8 +55,11 @@ We have done this second split for two reasons:
 To evaluate our model, in addiction to standard Bayesian methods like WAIC and LOO, we compute two different prediction error,
 and we evaluate on the three different dataset that we have (alsfrs_train, alsfrs_train_patient_test_observation, alsfrs_test).
 
-The first error is just a mean absolute error: mean( | mean(Y_predict) - Y_true | )
-The second error takes into account also the variability of prediction: mean( | mean(Y_predict) - Y_true | + |lenght(IC_95)| )
+The first error is just a mean absolute error: 
+        mean( | mean(Y_predict) - Y_true | )
+
+The second error takes into account also the variability of prediction: 
+        mean( | mean(Y_predict) - Y_true | + |lenght(IC_95)| )
 
 ## Model 1: Delta
 
