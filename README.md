@@ -63,12 +63,36 @@ The second error takes into account also the variability of prediction:
 
 ## Model 1: Delta
 
-In our first model, we use as covariate only Delta. In particular: 
+In our first model, we use as covariate only Delta. 
+In particular: 
 mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + theta_0i + theta_1i* Delta_ij
 
-See [read me] (https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1) for details and results.
+See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1) for details and results.
 
 ## Model 2: Delta + Onset_site
 
+In second model, we add our first covariate, in this case a factor varible: Onset_Site, that can be equal to Bulbar or Limb.
+In the medicine literature, they state that the Bulbar type of ALS is more aggressive than the Limb one.
 
+![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/bulbar_vs_limb.png)
 
+mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + beta_2 * Onset_Site_LIMB + beta_3 * Delta_ij * Onset_Site_LIMB +
+                  theta_0i + theta_1i * Delta_ij
+
+See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/master/model2/readme.md) for results.
+
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  | 1.353407  |
+| Train. with new obs | 3.808556  |
+| Test set | 6.555238  |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  |  |
+| Train. with new obs |   |
+| Test set |   |
+
+## Model 3: Delta + Onset_site + Medication (Riluzole and Treatment)
+
+## Model 4: Covariates selection
