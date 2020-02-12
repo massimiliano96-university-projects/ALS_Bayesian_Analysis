@@ -14,4 +14,4 @@ we chose a normal - inv-gamma models
 
 ## Results
 
-![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1/images/plot_model1_beta2.jpeg)
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model1/images/plot_model1_beta2.%20jpeg)
