@@ -24,6 +24,6 @@ other techniques, but first of all we discard the columns with more than 35% of 
 ## Filling Method
 
 For what concern fixed covariates, we use some tecniques to fill the NA, for example fill with the median.
-For longitudinal covariates we use the package MICE (Multivariate Imputation by Chained Equations) with n=5 imputation.
+For longitudinal covariates we use the package MICE (Multivariate Imputation by Chained Equations) with m=10 imputations.
 
 The dataset resulting from this preprocessing is "alsfrs_riempito.csv"
