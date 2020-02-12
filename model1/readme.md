@@ -2,7 +2,7 @@
 This is the first model of this project, the aim is investigating the trend of ALSFRS with respect ot the time (Delta). Of course we expect the ALSFRS as a decreasing function of time.
 
 ## Model
-We adopted a Mixed effect fraimwork for ore models:
+We adopted a Mixed effect framework for ore models:
 
 ALSFRS(t) = beta_0 + beta_1 * t + theta_0 + theta_1* t + epsilon
 
