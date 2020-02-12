@@ -15,6 +15,7 @@ First, we need to work on alsfrs dataset in order to have it all in ALSFRS-Revis
 - ID of patient
 - Delta, time from time 0 (when patient enters in the dataset) when we evaluate ALSFRS-R
 - ALSFRS-R: score.
+
 Every patient has more than one temporal evaluation (and so more than one rows in our dataset), for this reason we can use a Longitudinal approach.
 See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/make%20ALSFRS%20longitudinal/readme.md) in the folder "Make ALSFRS longitudinal" for details.
 
@@ -23,6 +24,7 @@ After that, we need to build a dataset with other covariates, both fixed and lon
 - Disease data: Onset syte of ALS and Onset Delta (time from Time 0 when the patient start to see the symptoms)
 - Lab data: some lab test like FVC, SGPT, SGOT etc.
 - Medication data: Riluzole and Treatment.
+
 See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/Data%20Preprocessing) in the folder "Data Preprocessing" for details.
 
 # Bayesian Approach: Longitudinal Data and First Mixed Effect Model
