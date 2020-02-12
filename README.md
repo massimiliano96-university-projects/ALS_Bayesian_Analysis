@@ -28,5 +28,44 @@ After that, we need to build a dataset with other covariates, both fixed and lon
 See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/Data%20Preprocessing) in the folder "Data Preprocessing" for details.
 
 # Bayesian Approach: Longitudinal Data and First Mixed Effect Model
+We use a Mixed Effect model with i = 1,...,m (num of patients), and j = 1,...,n_i (with n_i number of obs for patient i).
+![images approach](
+https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/bayesian%20approach.jpg)
 
-...
+We can see the fixed effect part (X_ij * beta) and the random effect part (Z_ij * theta_i), where theta_i is the vector of random
+coeff for the patient i.
+We assume as priors a Normal prior with fixed variance for the betas, while for theta_i a normal with a normal-invgamma model.
+
+We use as covariate matrix X_ij both the time (for example Delta and later also Cosine_Delta) and the other covariates that we add 
+in Data Preprocessing (both fixed and longitudinal); while for the random effect part we are going to use only time variables.
+
+# Models
+## How can we evaluate our models?
+
+We have split our dataset in 3 parts: a training set and two different test sets.
+Firstly, we select a group of patient ID to use them in our model ("alsfrs_train"). Another group of ID is used as test set ("alsfrs_test).
+Then, we take our training set and we split it in two part:
+For some patient (50%) in training set, we take the second half temporal evaluation and we put it in a new test set, 
+and we call it : "alsfrs_train_patient_test_observation".
+
+We have done this second split for two reasons:
+1) we can test our model on two different test set, with different characteristics;
+2) mixed effect model predict in a different way if the patient ID is present or not in the training set.
+
+To evaluate our model, in addiction to standard Bayesian methods like WAIC and LOO, we compute two different prediction error,
+and we evaluate on the three different dataset that we have (alsfrs_train, alsfrs_train_patient_test_observation, alsfrs_test).
+
+The first error is just a mean absolute error: mean( | mean(Y_predict) - Y_true | )
+The second error takes into account also the variability of prediction: mean( | mean(Y_predict) - Y_true | + |lenght(IC_95)| )
+
+## Model 1: Delta
+
+In our first model, we use as covariate only Delta. In particular: 
+mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + theta_0i + theta_1i* Delta_ij
+
+See [read me] (https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1) for details and results.
+
+## Model 2: Delta + Onset_site
+
+
+
