@@ -99,14 +99,14 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 
 | Error 1  |  |
 | ------------- | ------------- |
-| Training set  | 1.353407  |
-| Train. with new obs | 3.808556  |
-| Test set | 6.555238  |
+| Training set  | 1.358297  |
+| Train. with new obs | 3.639182  |
+| Test set | 6.036255  |
 
 | Error 2  |  |
 | ------------- | ------------- |
-| Training set  | 10.62259 |
-| Train. with new obs | 20.34279  |
-| Test set | 40.21576  |
+| Training set  | 10.56538 |
+| Train. with new obs | 19.77135 |
+| Test set | 37.31195  |
 
 ## Model 5: Covariates + Cosine
