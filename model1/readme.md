@@ -4,7 +4,7 @@ This is the first model of this project, the aim is investigating the trend of A
 ## Model
 We adopted a Mixed effect framework for ore models:
 
-ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1Delta(j) + \theta_1i + \theta_2iDelta(j)
+ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1Delta(j) + \theta_1i + \theta_2i*Delta(j)
 
 here the betas are the fixed coefficients and the thetas the random ones.
 
