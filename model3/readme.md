@@ -8,4 +8,4 @@ The exact medications used in the trials are not specified, as part of our effor
 ## Riluzole :
 Riluzole is the only drug approved for treating Amyotrophic Lateral Sclerosis (ALS). Information is included about its use.
 
-[!alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Treatment.%20jpeg)
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Treatment.%20jpeg)
