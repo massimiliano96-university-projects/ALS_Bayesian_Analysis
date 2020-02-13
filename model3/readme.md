@@ -20,3 +20,8 @@ ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1 * Delta(j) + \beta_2 * I_bulbar(i
 ![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Riluzole.%20jpeg)
 
 ![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Riluzole_interaction.%20jpeg)
+
+# Results:
+
+Looking at these posterior credible intervals, we have no evidence of the effect of these covariates, because all the credible intervals contain zero.
+Therefore we decided to remove these quantities, and start adding new values.
