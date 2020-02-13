@@ -28,4 +28,4 @@ we plotted these patients:
 
 ![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model1/images/outliers_score.%20jpeg)
 
-As you can see, there is a very big variability in the intercept and the slope, this fact justify the addition of new covariates, let's proceed with Model2.
+As you can see, there is a very big variability in the intercept and the slope, this fact justifies the addition of new covariates, let's proceed with Model2.
