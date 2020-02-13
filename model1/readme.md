@@ -18,8 +18,6 @@ we chose a normal - inv-gamma models
 
 the posterior credible interval is totally negative, hence we deduce that our covariate is significative, and ALSFRS decrease with time.
 
-![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model1/images/plot_model1_marginal_effect.jpeg)
-
 ## Random Effect Outliers
 
 We discovered the existence of some patients for which the thetas are very large:
