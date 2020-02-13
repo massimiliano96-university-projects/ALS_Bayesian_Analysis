@@ -97,6 +97,29 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 
 ## Model 4: Covariates selection
 
+And finally we add all the covariates that we select in "Data Preprocessing". With more than 20 betas, we have to face the problem
+of overfitting due to the number of degree of freedom of our model.
+For this reason we use a regularization in the prior for the beta, 
+in particular we use the Horseshoe Prior (Carvalho, Polson, and Scott 2009).
+
+If we want to understand how this regularization works, 
+we can see the comparison of the unit ball from classical regul (Ridge, Lassu, Cauchy) and the Horseshoe.
+![images regularization](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/horseshoe.jpeg)
+
+The difference here is that in the Horseshoe reg. the unit ball contain all the axes; for this reason, we can delete the covariates
+that will have alll the density around zero.
+
+### Covariates
+We can see the result for the first betas
+![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas_model4.jpg)
+
+and for the betas of interaction between Delta and Onset_site, Medication and Riluzole
+![beta2_model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas2_model4.jpg)
+
+There are some variables that have a density all in zero, like BMI_0, BMI_diff, Sex, Glucose etc.
+
+In the next model (model 5) we don't use these variables, in order to have a simpler model and to save computational time.
+
 | Error 1  |  |
 | ------------- | ------------- |
 | Training set  | 1.358297  |
@@ -110,3 +133,14 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 | Test set | 37.31195  |
 
 ## Model 5: Covariates + Cosine
+
+After the selection made in model 4, we add some cosine splines in time, both in fixed and random part.
+
+For a patient i, at time j:
+cos_delta_1_ij = cos(pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+cos_delta_2_ij = cos(2 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+cos_delta_3_ij = cos(3 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+
+These new terms can capture the sinusoidal behaviour of some patients, that in particular have a first period of slow decrease,
+then a fast decrease, and finally a "stabilization".
+
