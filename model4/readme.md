@@ -32,6 +32,6 @@ In the next model (model 5) we don't use these variables, in order to have a sim
 
 | Error 2  |  |
 | ------------- | ------------- |
-| Training set  |  |
-| Train. with new obs |   |
-| Test set |   |
+| Training set  | 10.56538 |
+| Train. with new obs | 19.77135 |
+| Test set | 37.31195  |
