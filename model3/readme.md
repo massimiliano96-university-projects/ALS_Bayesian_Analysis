@@ -13,3 +13,10 @@ Riluzole is the only drug approved for treating Amyotrophic Lateral Sclerosis (A
 ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1 * Delta(j) + \beta_2 * I_bulbar(i) + \beta_3 * I_Treatment(i) + \beta4 * I_Riluzole(i) + \beta_5 *Delta(j)*I_bulbar(i) + \beta6 * Delta(j)*I_Treatment(i) + \beta7 * Delta(j)*I_Riluzole(i)  + \theta_1i + \theta_2iDelta(j)
 
 
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Treatment.%20jpeg)
+
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Treatment_interaction.%20jpeg)
+
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Riluzole.%20jpeg)
+
+![alt text](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/images/plot_b_Riluzole_interaction.%20jpeg)
