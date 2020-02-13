@@ -69,6 +69,18 @@ mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + theta_0i + theta_1i* Delta_ij
 
 See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1) for details and results.
 
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |   |
+| Test set |   |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |    |
+| Test set |    |
+
 ## Model 2: Delta + Onset_site
 
 In second model, we add our first covariate, in this case a factor varible: Onset_Site, that can be equal to Bulbar or Limb.
@@ -94,6 +106,18 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 | Test set | 40.21576  |
 
 ## Model 3: Delta + Onset_site + Medication (Riluzole and Treatment)
+
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |   |
+| Test set |   |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |    |
+| Test set |    |
 
 ## Model 4: Covariates selection
 
@@ -136,11 +160,39 @@ In the next model (model 5) we don't use these variables, in order to have a sim
 
 After the selection made in model 4, we add some cosine splines in time, both in fixed and random part.
 
-For a patient i, at time j:
-cos_delta_1_ij = cos(pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
-cos_delta_2_ij = cos(2 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
-cos_delta_3_ij = cos(3 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+For a patient i, at time j :
+- cos_delta_1_ij = cos(pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+- cos_delta_2_ij = cos(2 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
+- cos_delta_3_ij = cos(3 * pi * (t_ij - t_min,i) / (t_max,i - t_min,i))
 
 These new terms can capture the sinusoidal behaviour of some patients, that in particular have a first period of slow decrease,
 then a fast decrease, and finally a "stabilization".
+
+![plot patient cos](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/plot_pazienti_cos.jpeg)
+
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |   |
+| Test set |   |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  |   |
+| Train. with new obs |    |
+| Test set |    |
+
+# Prediction on patient from training set on NEW observation
+
+Probably the most useful prediction from this method could be a prediction for a patient in the training set but on 
+new observation (later in time).
+With this prediction, we can sample from the posterior of thetas of that specific patient (in addiction to the fixed effect betas)
+and we can take into account the variability among the different patients.
+
+Let's see two example:
+![paziente1](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/paziente1.jpeg)
+![paziente2](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/paziente2.jpeg)
+
+We can see in blue the evaluation in the training set, while in green the new observations. The prediction are quite good, the estimate
+are just a bit bigger than the real value.
 
