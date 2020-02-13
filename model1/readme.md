@@ -4,13 +4,13 @@ This is the first model of this project, the aim is investigating the trend of A
 ## Model
 We adopted a Mixed effect framework for ore models:
 
-ALSFRS(t) = beta_0 + beta_1 * t + theta_0 + theta_1* t + epsilon
+ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1Delta(j) + \beta_2 I_bulbar(i) + \beta_3*Delta(j)I_bulbar(i) + \theta_1i + \theta_2iDelta(j)
 
 here the betas are the fixed coefficients and the thetas the random ones.
 
 ## Prior
 
-we chose a normal - inv-gamma models
+For the betas, we assume a Normal prior with fix variances, instead for theta we assume a normal prior of N(0,tau^2), where tau comes from a inv-gamma prior. 
 
 ## Results
 
