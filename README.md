@@ -89,10 +89,24 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 
 | Error 2  |  |
 | ------------- | ------------- |
-| Training set  |  |
-| Train. with new obs |   |
-| Test set |   |
+| Training set  | 10.62259 |
+| Train. with new obs | 20.34279  |
+| Test set | 40.21576  |
 
 ## Model 3: Delta + Onset_site + Medication (Riluzole and Treatment)
 
 ## Model 4: Covariates selection
+
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  | 1.353407  |
+| Train. with new obs | 3.808556  |
+| Test set | 6.555238  |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  | 10.62259 |
+| Train. with new obs | 20.34279  |
+| Test set | 40.21576  |
+
+## Model 5: Covariates + Cosine
