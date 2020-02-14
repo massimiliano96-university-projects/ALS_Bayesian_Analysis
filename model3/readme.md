@@ -25,3 +25,17 @@ ALSFRS_(patient_i, time_j) = \beta_0 + \beta_1 * Delta(j) + \beta_2 * I_bulbar(i
 
 Looking at these posterior credible intervals, we have no evidence of the effect of these covariates, because all the credible intervals contain zero.
 Therefore we decided to remove these quantities, and start adding new values.
+
+
+# Errors
+| Error 1  |  |
+| ------------- | ------------- |
+| Training set  | 1.354077  |
+| Train. with new obs | 3.789828  |
+| Test set | 6.542049  |
+
+| Error 2  |  |
+| ------------- | ------------- |
+| Training set  | 10.6321 |
+| Train. with new obs | 20.30937 |
+| Test set | 40.10289 |
