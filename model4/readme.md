@@ -13,11 +13,8 @@ The difference here is that in the Horseshoe reg. the unit ball contain all the 
 that will have alll the density around zero.
 
 # Covariates
-We can see the result for the first betas
-![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas_model4.jpg)
-
-and for the betas of interaction between Delta and Onset_site, Medication and Riluzole
-![beta2_model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas2_model4.jpg)
+We can see the result for the betas
+![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/betas_model_final.jpg)
 
 There are some variables that have a density all in zero, like BMI_0, BMI_diff, Sex, Glucose etc.
 
