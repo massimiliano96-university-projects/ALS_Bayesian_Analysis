@@ -223,3 +223,9 @@ Let's see two example:
 We can see in blue the evaluation in the training set, while in green the new observations. The prediction are quite good, the estimate
 are just a bit bigger than the real value.
 
+# Patient far from "the mean"
+
+We can use this type of model (Mixed Effect Model) to found patient that behaves very differently from the rest.
+If for example we analyze their random effect part (in mean, since we have a posterior sample), we can see these type of plot:
+
+![images_pair]()
