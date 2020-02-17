@@ -69,18 +69,6 @@ mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + theta_0i + theta_1i* Delta_ij
 
 See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/master/model1) for details and results.
 
-| Error 1  |  |
-| ------------- | ------------- |
-| Training set  |   |
-| Train. with new obs |   |
-| Test set |   |
-
-| Error 2  |  |
-| ------------- | ------------- |
-| Training set  |   |
-| Train. with new obs |    |
-| Test set |    |
-
 ## Model 2: Delta + Onset_site
 
 In second model, we add our first covariate, in this case a factor varible: Onset_Site, that can be equal to Bulbar or Limb.
@@ -106,6 +94,15 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 | Test set | 40.21576  |
 
 ## Model 3: Delta + Onset_site + Medication (Riluzole and Treatment)
+At this step we wanted to investigate if some clinical behaviour have a statistical evidence effect on the progression of the disease. With this aim, we added the following covariates:
+
+### Treatment:
+The exact medications used in the trials are not specified, as part of our effort to avoid identification of the patients involved. Information is available as to whether any individual patient received medication or placebo.
+
+### Riluzole :
+Riluzole is the only drug approved for treating Amyotrophic Lateral Sclerosis (ALS). Information is included about its use.
+
+See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model3/readme.md) for results.
 
 | Error 1  |  |
 | ------------- | ------------- |
