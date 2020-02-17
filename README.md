@@ -231,6 +231,6 @@ Here we can detect, for example patients with anomalous random intercept:
 ![random_intercept_outlier](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/outliers_intercept.jpeg)
 
 for others, see:
-https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images
+![images](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images)
 
 
