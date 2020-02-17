@@ -74,7 +74,7 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/maste
 In second model, we add our first covariate, in this case a factor varible: Onset_Site, that can be equal to Bulbar or Limb.
 In the medicine literature, they state that the Bulbar type of ALS is more aggressive than the Limb one.
 
-![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/Model%20Delta%20%26%20Onset%20Type/images/bulbar_vs_limb.png)
+![images bulbar vs limb](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model2/images/bulbar_vs_limb.png)
 
 mean(ALSFRS_ij) = beta_0 + beta_1 * Delta_ij + beta_2 * Onset_Site_LIMB + beta_3 * Delta_ij * Onset_Site_LIMB +
                   theta_0i + theta_1i * Delta_ij
