@@ -222,7 +222,10 @@ are just a bit bigger than the real value.
 
 # Patient far from "the mean"
 
-We can use this type of model (Mixed Effect Model) to found patient that behaves very differently from the rest.
+We can use this type of model (Mixed Effect Model) to found patients that behave very differently from the rest.
 If for example we analyze their random effect part (in mean, since we have a posterior sample), we can see these type of plot:
 
 ![images_pair](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/random_effect_pairs.jpeg)
+
+Here we can detect some patients with random intercept:
+![random_intercept_outlier](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/outliers_intercept.jpeg)
