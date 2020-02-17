@@ -75,7 +75,7 @@ fit1 <- brm(data = alsfrs_train,
               (1 + Delta || ID),
             
             prior = c(prior(normal(0, 10), class = Intercept),
-                      prior(horseshoe(3), class = b),
+                      prior(horseshoe(1), class = b),
                       prior(inv_gamma(2, 1), class = sd),
                       prior(inv_gamma(2, 1), class = sigma)),    
             iter = 20000, warmup = 5000, chains = 1, cores = 4,
