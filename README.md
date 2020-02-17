@@ -227,5 +227,10 @@ If for example we analyze their random effect part (in mean, since we have a pos
 
 ![images_pair](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/random_effect_pairs.jpeg)
 
-Here we can detect some patients with random intercept:
+Here we can detect, for example patients with anomalous random intercept:
 ![random_intercept_outlier](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/outliers_intercept.jpeg)
+
+for others, see:
+https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images
+
+
