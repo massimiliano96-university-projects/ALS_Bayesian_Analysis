@@ -30,12 +30,12 @@ Therefore we decided to remove these quantities, and start adding new values.
 # Errors
 | Error 1  |  |
 | ------------- | ------------- |
-| Training set  | 1.354077  |
-| Train. with new obs | 3.789828  |
-| Test set | 6.542049  |
+| Training set  | 1.353605  |
+| Train. with new obs | 3.7856  |
+| Test set | 20.29393  |
 
 | Error 2  |  |
 | ------------- | ------------- |
-| Training set  | 10.6321 |
-| Train. with new obs | 20.30937 |
-| Test set | 40.10289 |
+| Training set  |  10.61728 |
+| Train. with new obs | 20.29393   |
+| Test set | 40.2572   |
