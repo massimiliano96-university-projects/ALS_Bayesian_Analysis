@@ -132,8 +132,8 @@ that will have alll the density around zero.
 
 ### Covariates
 We can see the result for the betas
-![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas_model4.jpg)
-![betas model4_2](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas2_model4.jpg)
+![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas_model4.pdf)
+
 
 There are some variables that have a density all in zero, like BMI_0, BMI_diff, Sex, Glucose etc.
 
