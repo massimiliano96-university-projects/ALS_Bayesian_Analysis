@@ -125,17 +125,15 @@ in particular we use the Horseshoe Prior (Carvalho, Polson, and Scott 2009).
 
 If we want to understand how this regularization works, 
 we can see the comparison of the unit ball from classical regul (Ridge, Lassu, Cauchy) and the Horseshoe.
-![images regularization](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/horseshoe.jpeg)
+![images regularization](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/horseshoe.jpeg)
 
 The difference here is that in the Horseshoe reg. the unit ball contain all the axes; for this reason, we can delete the covariates
 that will have alll the density around zero.
 
 ### Covariates
-We can see the result for the first betas
-![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas_model4.jpg)
-
-and for the betas of interaction between Delta and Onset_site, Medication and Riluzole
-![beta2_model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/betas2_model4.jpg)
+We can see the result for the betas
+![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas_model4.jpg)
+![betas model4_2](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas2_model4.jpg)
 
 There are some variables that have a density all in zero, like BMI_0, BMI_diff, Sex, Glucose etc.
 
@@ -217,8 +215,7 @@ With this prediction, we can sample from the posterior of thetas of that specifi
 and we can take into account the variability among the different patients.
 
 Let's see two example:
-![paziente1](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/paziente1.jpeg)
-![paziente2](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/paziente2.jpeg)
+![paziente1](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/prediction_2_patients.jpeg)
 
 We can see in blue the evaluation in the training set, while in green the new observations. The prediction are quite good, the estimate
 are just a bit bigger than the real value.
@@ -228,4 +225,4 @@ are just a bit bigger than the real value.
 We can use this type of model (Mixed Effect Model) to found patient that behaves very differently from the rest.
 If for example we analyze their random effect part (in mean, since we have a posterior sample), we can see these type of plot:
 
-![images_pair]()
+![images_pair](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/random_effect_pairs.jpeg)
