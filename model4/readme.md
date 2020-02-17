@@ -7,14 +7,15 @@ in particular we use the Horseshoe Prior (Carvalho, Polson, and Scott 2009).
 
 If we want to understand how this regularization works, 
 we can see the comparison of the unit ball from classical regul (Ridge, Lassu, Cauchy) and the Horseshoe.
-![images regularization](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/horseshoe.jpeg)
+![images regularization](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/horseshoe.jpeg)
 
 The difference here is that in the Horseshoe reg. the unit ball contain all the axes; for this reason, we can delete the covariates
 that will have alll the density around zero.
 
 # Covariates
 We can see the result for the betas
-![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/betas_model_final.jpg)
+![betas model4](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas_model4.jpg)
+![betas model4_2](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model4/images/betas2_model4.jpg)
 
 There are some variables that have a density all in zero, like BMI_0, BMI_diff, Sex, Glucose etc.
 
