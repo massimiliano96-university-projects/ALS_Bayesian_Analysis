@@ -109,15 +109,15 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/edit/maste
 
 | Error 1  |  |
 | ------------- | ------------- |
-| Training set  |   |
-| Train. with new obs |   |
-| Test set |   |
+| Training set  | 1.353605  |
+| Train. with new obs | 3.7856  |
+| Test set | 20.29393  |
 
 | Error 2  |  |
 | ------------- | ------------- |
-| Training set  |   |
-| Train. with new obs |    |
-| Test set |    |
+| Training set  |  10.61728 |
+| Train. with new obs | 20.29393   |
+| Test set | 40.2572   |
 
 ## Model 4: Covariates selection
 
