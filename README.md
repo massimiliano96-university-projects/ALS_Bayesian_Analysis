@@ -29,8 +29,7 @@ See [read me](https://github.com/massimiliano96/ALS_Bayesian_Analysis/tree/maste
 
 # Bayesian Approach: Longitudinal Data and First Mixed Effect Model
 We use a Mixed Effect model with i = 1,...,m (num of patients), and j = 1,...,n_i (with n_i number of obs for patient i).
-![images approach](
-https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/bayesian%20approach.jpg)
+![images approach](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model1/images/bayesian%20approach.jpg)
 
 We can see the fixed effect part (X_ij * beta) and the random effect part (Z_ij * theta_i), where theta_i is the vector of random
 coeff for the patient i.
@@ -165,7 +164,7 @@ For a patient i, at time j :
 These new terms can capture the sinusoidal behaviour of some patients, that in particular have a first period of slow decrease,
 then a fast decrease, and finally a "stabilization".
 
-![plot patient cos](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/images/plot_pazienti_cos.jpeg)
+![plot patient cos](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/plot_pazienti_cos.jpeg)
 
 ![betas_model_final](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/betas_model_final.jpg)
 
