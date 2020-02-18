@@ -229,7 +229,6 @@ If for example we analyze their random effect part (in mean, since we have a pos
 Here we can detect, for example patients with anomalous random intercept:
 ![random_intercept_outlier](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images/outliers_intercept.jpeg)
 
-for others, see:
-![images](https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images)
+for others outliers, see here https://github.com/massimiliano96/ALS_Bayesian_Analysis/blob/master/model5/images
 
 
